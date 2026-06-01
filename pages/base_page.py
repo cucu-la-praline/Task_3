@@ -20,30 +20,25 @@ class BasePage:
         with allure.step(f"Клик по элементу: {locator}"):
             wait = WebDriverWait(self.driver, timeout)
 
-            # 1. Ждем, что элемент присутствует в DOM
-            element = wait.until(EC.presence_of_element_located(locator))
+            # 1. Ждём, что элемент станет кликабельным (это включает видимость и доступность)
+            element = wait.until(EC.element_to_be_clickable(locator))
 
             # 2. Прокручиваем к элементу
-            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
-            time.sleep(0.3)  # Небольшая пауза для Firefox
+            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'instant'});", element)
 
-            # 3. Ждем, что элемент стал видимым
-            wait.until(EC.visibility_of(element))
+            # 3. Для Firefox нужно дополнительное ожидание после прокрутки
+            #    Используем ожидание, а не time.sleep
+            browser_name = self.driver.capabilities.get("browserName", "").lower()
+            if "firefox" in browser_name:
+                # Ждём, что элемент всё ещё кликабелен после прокрутки
+                wait.until(EC.element_to_be_clickable(locator))
 
-            # 4. Ждем, что элемент стал кликабельным
-            wait.until(EC.element_to_be_clickable(locator))
-
-            # 5. Пробуем кликнуть
+            # 4. Кликаем
             try:
                 element.click()
             except ElementClickInterceptedException:
-                # Если перехвачено, пробуем клик через JS
+                # Только перехватываем конкретную ошибку перекрытия
                 self.driver.execute_script("arguments[0].click();", element)
-            except Exception as e:
-                # Если ошибка, делаем паузу и пробуем ещё раз
-                time.sleep(1)
-                element = wait.until(EC.element_to_be_clickable(locator))
-                element.click()
 
     def send_keys(self, locator, text):
         with allure.step(f"Ввод текста '{text}' в поле: {locator}"):
@@ -84,21 +79,25 @@ class BasePage:
         """
         Универсальный метод для перетаскивания элемента с поддержкой Firefox
         """
-        source_element = self.wait.until(
+        wait = WebDriverWait(self.driver, timeout)
+
+        source_element = wait.until(
             EC.presence_of_element_located(source_locator),
             message=f"Не найден источник: {source_locator}"
         )
 
-        target_element = self.wait.until(
+        target_element = wait.until(
             EC.presence_of_element_located(target_locator),
             message=f"Не найдена цель: {target_locator}"
         )
 
         # Прокручиваем к элементам
         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", source_element)
-        time.sleep(0.3)
         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", target_element)
-        time.sleep(0.3)
+
+        # Ждём, что прокрутка завершилась и элементы стали видимы
+        wait.until(EC.visibility_of(source_element))
+        wait.until(EC.visibility_of(target_element))
 
         # Определяем браузер
         is_firefox = "firefox" in self.driver.capabilities["browserName"].lower()
@@ -111,8 +110,8 @@ class BasePage:
             try:
                 actions = ActionChains(self.driver)
                 actions.drag_and_drop(source_element, target_element).perform()
-            except Exception as e:
-                print(f"ActionChains failed: {e}, trying JS method")
+            except ElementClickInterceptedException:
+                # Если ActionChains не сработал, пробуем JS метод
                 self._drag_and_drop_firefox(source_element, target_element)
 
     def _drag_and_drop_firefox(self, source_element, target_element):
@@ -164,7 +163,6 @@ class BasePage:
         try:
             self.driver.execute_script(js_code, source_element, target_element)
         except Exception as e:
-            print(f"JS drag and drop failed: {e}, trying alternative method")
             self._drag_and_drop_click_hold(source_element, target_element)
 
     def _drag_and_drop_click_hold(self, source_element, target_element):

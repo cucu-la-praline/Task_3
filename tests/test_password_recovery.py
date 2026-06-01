@@ -1,6 +1,10 @@
+import time
+
 import allure
-import pytest
+
 from pages.login_page import LoginPage
+from pages.main_page import MainPage
+from pages.reg_page import RegistrationPage
 
 
 @allure.feature("Восстановление пароля")
@@ -10,9 +14,9 @@ class TestPasswordRecovery:
     def test_go_to_forgot_password_page(self, browser, base_url):
         browser.get(base_url)
         main_page = MainPage(browser)
-        main_page.click_login_button()
-
         login_page = LoginPage(browser)
+
+        main_page.click_login_button()
         login_page.click_forgot_password_link()
 
         assert "forgot-password" in browser.current_url
@@ -20,15 +24,13 @@ class TestPasswordRecovery:
     @allure.title("Ввод почты и клик по кнопке «Восстановить»")
     def test_restore_password_with_email(self, browser, base_url, registered_user):
         user_data, _ = registered_user
-
         browser.get(base_url)
         main_page = MainPage(browser)
-        main_page.click_login_button()
-
         login_page = LoginPage(browser)
-        login_page.click_forgot_password_link()
+        forgot_page = RegistrationPage(browser)
 
-        forgot_page = ForgotPasswordPage(browser)
+        main_page.click_login_button()
+        login_page.click_forgot_password_link()
         forgot_page.enter_email(user_data["email"])
         forgot_page.click_restore_button()
 
@@ -39,15 +41,12 @@ class TestPasswordRecovery:
         browser.get(base_url)
         main_page = MainPage(browser)
         main_page.click_login_button()
-
+        reg_page = RegistrationPage(browser)
         login_page = LoginPage(browser)
+
         login_page.click_forgot_password_link()
+        reg_page.enter_email("test@test.com")
+        reg_page.click_restore_button()
+        reg_page.click_show_password_button()
 
-        forgot_page = ForgotPasswordPage(browser)
-        forgot_page.enter_email("test@test.com")
-        forgot_page.click_restore_button()
-
-        reset_page = ResetPasswordPage(browser)
-        reset_page.click_show_password_button()
-
-        assert reset_page.is_password_field_active()
+        assert reg_page.is_password_field_active()
