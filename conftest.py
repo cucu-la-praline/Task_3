@@ -97,4 +97,4 @@ def login_user(browser, base_url, registered_user):
     login_page = LoginPage(browser)
     login_page.login(user_data["email"], user_data["password"])
 
-    yield browser, user_data, token
+    return browser, user_data, token
