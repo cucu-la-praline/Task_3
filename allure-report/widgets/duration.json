@@ -1,0 +1,171 @@
+[ {
+  "uid" : "13257ee0888830be",
+  "name" : "Переход на страницу восстановления пароля по кнопке «Восстановить пароль»",
+  "time" : {
+    "start" : 1780086086202,
+    "stop" : 1780086087157,
+    "duration" : 955
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34aeae9345cac9c",
+  "name" : "Клик на заказ - открывается всплывающее окно с деталями",
+  "time" : {
+    "start" : 1780085924020,
+    "stop" : 1780085926133,
+    "duration" : 2113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3afaeaaf16870d80",
+  "name" : "После оформления заказа его номер появляется в разделе 'В работе'",
+  "time" : {
+    "start" : 1780085991214,
+    "stop" : 1780085999155,
+    "duration" : 7941
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37ed60e9e55b71dd",
+  "name" : "Залогиненный пользователь может оформить заказ",
+  "time" : {
+    "start" : 1780086070080,
+    "stop" : 1780086074297,
+    "duration" : 4217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29f532d47a21091d",
+  "name" : "Переход по клику на «Лента заказов»",
+  "time" : {
+    "start" : 1780086021478,
+    "stop" : 1780086022527,
+    "duration" : 1049
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8726829dbd851258",
+  "name" : "Переход в раздел «История заказов»",
+  "time" : {
+    "start" : 1780086131893,
+    "stop" : 1780086134202,
+    "duration" : 2309
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60ba8689ca162cbd",
+  "name" : "Клик на ингредиент - появляется всплывающее окно с деталями",
+  "time" : {
+    "start" : 1780086031281,
+    "stop" : 1780086032090,
+    "duration" : 809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c69c491d2af979f",
+  "name" : "Всплывающее окно закрывается кликом по крестику",
+  "time" : {
+    "start" : 1780086041061,
+    "stop" : 1780086043025,
+    "duration" : 1964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd65fa33f2b816f4",
+  "name" : "При создании нового заказа счётчик 'Выполнено за сегодня' увеличивается",
+  "time" : {
+    "start" : 1780085971262,
+    "stop" : 1780085977017,
+    "duration" : 5755
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82c75bd0a5cec2eb",
+  "name" : "Переход по клику на «Конструктор»",
+  "time" : {
+    "start" : 1780086011254,
+    "stop" : 1780086012738,
+    "duration" : 1484
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "391ecffd34e0dc07",
+  "name" : "Переход по клику на «Личный кабинет»",
+  "time" : {
+    "start" : 1780086118925,
+    "stop" : 1780086120942,
+    "duration" : 2017
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd90d98874efea65",
+  "name" : "При создании нового заказа счётчик 'Выполнено за всё время' увеличивается",
+  "time" : {
+    "start" : 1780085956209,
+    "stop" : 1780085961993,
+    "duration" : 5784
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b848fd5c0b7bb39d",
+  "name" : "При добавлении ингредиента в заказ увеличивается каунтер",
+  "time" : {
+    "start" : 1780086051696,
+    "stop" : 1780086053173,
+    "duration" : 1477
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f5b284d945ee9a1",
+  "name" : "Выход из аккаунта",
+  "time" : {
+    "start" : 1780086146027,
+    "stop" : 1780086148925,
+    "duration" : 2898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ceda2672df947fc7",
+  "name" : "Клик по кнопке показать/скрыть пароль делает поле активным",
+  "time" : {
+    "start" : 1780086107307,
+    "stop" : 1780086110021,
+    "duration" : 2714
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b35c4207fb1e301",
+  "name" : "Заказы пользователя из истории отображаются в ленте заказов",
+  "time" : {
+    "start" : 1780085935238,
+    "stop" : 1780085941972,
+    "duration" : 6734
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fbcc6c921c9efef0",
+  "name" : "Ввод почты и клик по кнопке «Восстановить»",
+  "time" : {
+    "start" : 1780086096136,
+    "stop" : 1780086098475,
+    "duration" : 2339
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

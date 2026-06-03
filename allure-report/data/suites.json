@@ -1,0 +1,245 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_list_orders",
+      "children" : [ {
+        "name" : "TestOrderFeed",
+        "children" : [ {
+          "name" : "Клик на заказ - открывается всплывающее окно с деталями",
+          "uid" : "34aeae9345cac9c",
+          "parentUid" : "c30b897e7b7d121d8870aa472d1f3e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780085924020,
+            "stop" : 1780085926133,
+            "duration" : 2113
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Заказы пользователя из истории отображаются в ленте заказов",
+          "uid" : "5b35c4207fb1e301",
+          "parentUid" : "c30b897e7b7d121d8870aa472d1f3e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780085935238,
+            "stop" : 1780085941972,
+            "duration" : 6734
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "При создании нового заказа счётчик 'Выполнено за всё время' увеличивается",
+          "uid" : "dd90d98874efea65",
+          "parentUid" : "c30b897e7b7d121d8870aa472d1f3e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780085956209,
+            "stop" : 1780085961993,
+            "duration" : 5784
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "При создании нового заказа счётчик 'Выполнено за сегодня' увеличивается",
+          "uid" : "dd65fa33f2b816f4",
+          "parentUid" : "c30b897e7b7d121d8870aa472d1f3e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780085971262,
+            "stop" : 1780085977017,
+            "duration" : 5755
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "После оформления заказа его номер появляется в разделе 'В работе'",
+          "uid" : "3afaeaaf16870d80",
+          "parentUid" : "c30b897e7b7d121d8870aa472d1f3e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780085991214,
+            "stop" : 1780085999155,
+            "duration" : 7941
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c30b897e7b7d121d8870aa472d1f3e28"
+      } ],
+      "uid" : "3c24bdd4bdd0ddc4ddaf78cb64868df8"
+    }, {
+      "name" : "test_main_functionality",
+      "children" : [ {
+        "name" : "TestMainFunctionality",
+        "children" : [ {
+          "name" : "Переход по клику на «Конструктор»",
+          "uid" : "82c75bd0a5cec2eb",
+          "parentUid" : "0f8dde372ca738c3f2220536ff2e8296",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086011254,
+            "stop" : 1780086012738,
+            "duration" : 1484
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Переход по клику на «Лента заказов»",
+          "uid" : "29f532d47a21091d",
+          "parentUid" : "0f8dde372ca738c3f2220536ff2e8296",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086021478,
+            "stop" : 1780086022527,
+            "duration" : 1049
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Клик на ингредиент - появляется всплывающее окно с деталями",
+          "uid" : "60ba8689ca162cbd",
+          "parentUid" : "0f8dde372ca738c3f2220536ff2e8296",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086031281,
+            "stop" : 1780086032090,
+            "duration" : 809
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Всплывающее окно закрывается кликом по крестику",
+          "uid" : "9c69c491d2af979f",
+          "parentUid" : "0f8dde372ca738c3f2220536ff2e8296",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086041061,
+            "stop" : 1780086043025,
+            "duration" : 1964
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "При добавлении ингредиента в заказ увеличивается каунтер",
+          "uid" : "b848fd5c0b7bb39d",
+          "parentUid" : "0f8dde372ca738c3f2220536ff2e8296",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086051696,
+            "stop" : 1780086053173,
+            "duration" : 1477
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Залогиненный пользователь может оформить заказ",
+          "uid" : "37ed60e9e55b71dd",
+          "parentUid" : "0f8dde372ca738c3f2220536ff2e8296",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086070080,
+            "stop" : 1780086074297,
+            "duration" : 4217
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0f8dde372ca738c3f2220536ff2e8296"
+      } ],
+      "uid" : "cf06dc75cabb185f4c80d8acd9a95ea5"
+    }, {
+      "name" : "test_password_recovery",
+      "children" : [ {
+        "name" : "TestPasswordRecovery",
+        "children" : [ {
+          "name" : "Переход на страницу восстановления пароля по кнопке «Восстановить пароль»",
+          "uid" : "13257ee0888830be",
+          "parentUid" : "694cff6baa6a851b70cf672fdb756fca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086086202,
+            "stop" : 1780086087157,
+            "duration" : 955
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Ввод почты и клик по кнопке «Восстановить»",
+          "uid" : "fbcc6c921c9efef0",
+          "parentUid" : "694cff6baa6a851b70cf672fdb756fca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086096136,
+            "stop" : 1780086098475,
+            "duration" : 2339
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Клик по кнопке показать/скрыть пароль делает поле активным",
+          "uid" : "ceda2672df947fc7",
+          "parentUid" : "694cff6baa6a851b70cf672fdb756fca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086107307,
+            "stop" : 1780086110021,
+            "duration" : 2714
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "694cff6baa6a851b70cf672fdb756fca"
+      } ],
+      "uid" : "d356acf8dc13a5fe8d292ff106f7008f"
+    }, {
+      "name" : "test_profile",
+      "children" : [ {
+        "name" : "TestProfile",
+        "children" : [ {
+          "name" : "Переход по клику на «Личный кабинет»",
+          "uid" : "391ecffd34e0dc07",
+          "parentUid" : "072ea10c449d8d543f7bce73dd90d20e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086118925,
+            "stop" : 1780086120942,
+            "duration" : 2017
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Переход в раздел «История заказов»",
+          "uid" : "8726829dbd851258",
+          "parentUid" : "072ea10c449d8d543f7bce73dd90d20e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086131893,
+            "stop" : 1780086134202,
+            "duration" : 2309
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Выход из аккаунта",
+          "uid" : "3f5b284d945ee9a1",
+          "parentUid" : "072ea10c449d8d543f7bce73dd90d20e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1780086146027,
+            "stop" : 1780086148925,
+            "duration" : 2898
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "072ea10c449d8d543f7bce73dd90d20e"
+      } ],
+      "uid" : "53fbf4908e152ddc75715832da26c24e"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ]
+}

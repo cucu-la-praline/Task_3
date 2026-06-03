@@ -1,0 +1,599 @@
+{
+  "uid" : "3afaeaaf16870d80",
+  "name" : "После оформления заказа его номер появляется в разделе 'В работе'",
+  "fullName" : "tests.test_list_orders.TestOrderFeed#test_order_number_appears_in_progress",
+  "historyId" : "205e50a8e4a159d7de6f8d6795fb7ecc",
+  "time" : {
+    "start" : 1780085991214,
+    "stop" : 1780085999155,
+    "duration" : 7941
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1780085990984,
+      "stop" : 1780085990984,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1780085900709,
+      "stop" : 1780085900789,
+      "duration" : 80
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "registered_user",
+    "time" : {
+      "start" : 1780085990984,
+      "stop" : 1780085991199,
+      "duration" : 215
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1780085983313,
+      "stop" : 1780085990984,
+      "duration" : 7671
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "api_base_url",
+    "time" : {
+      "start" : 1780085990984,
+      "stop" : 1780085990984,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Ожидание шапки страницы",
+      "time" : {
+        "start" : 1780085991369,
+        "stop" : 1780085991398,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по 'Войти в аккаунт'",
+      "time" : {
+        "start" : 1780085991398,
+        "stop" : 1780085991770,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"//button[contains(text(), 'Войти в аккаунт')]\")",
+        "time" : {
+          "start" : 1780085991398,
+          "stop" : 1780085991770,
+          "duration" : 372
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1780085991770,
+        "stop" : 1780085992309,
+        "duration" : 539
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ввод email",
+        "time" : {
+          "start" : 1780085991770,
+          "stop" : 1780085991823,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Ввод текста 'pearsonjulia@example.org' в поле: ('xpath', \"//input[@name='name']\")",
+          "time" : {
+            "start" : 1780085991770,
+            "stop" : 1780085991823,
+            "duration" : 53
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти элемент",
+            "time" : {
+              "start" : 1780085991770,
+              "stop" : 1780085991777,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "'pearsonjulia@example.org'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввод пароля",
+        "time" : {
+          "start" : 1780085991823,
+          "stop" : 1780085991923,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Ввод текста '(UjpGl2^p4' в поле: ('xpath', \"//input[@name='Пароль']\")",
+          "time" : {
+            "start" : 1780085991823,
+            "stop" : 1780085991923,
+            "duration" : 100
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти элемент",
+            "time" : {
+              "start" : 1780085991823,
+              "stop" : 1780085991833,
+              "duration" : 10
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "'(UjpGl2^p4'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Клик по кнопке 'Войти'",
+        "time" : {
+          "start" : 1780085991923,
+          "stop" : 1780085992309,
+          "duration" : 386
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Клик по элементу: ('xpath', \"//button[contains(text(), 'Войти')]\")",
+          "time" : {
+            "start" : 1780085991923,
+            "stop" : 1780085992309,
+            "duration" : 386
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'pearsonjulia@example.org'"
+      }, {
+        "name" : "password",
+        "value" : "'(UjpGl2^p4'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по 'Конструктор'",
+      "time" : {
+        "start" : 1780085992310,
+        "stop" : 1780085992752,
+        "duration" : 442
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"//p[contains(text(), 'Конструктор')]\")",
+        "time" : {
+          "start" : 1780085992310,
+          "stop" : 1780085992752,
+          "duration" : 442
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Перетаскиваем булку в верхнюю часть конструктора",
+      "time" : {
+        "start" : 1780085992752,
+        "stop" : 1780085993956,
+        "duration" : 1204
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Перетаскиваем элемент ('xpath', \"(//a[contains(@class, 'BurgerIngredient_ingredient')])[1]\") в целевую зону ('xpath', \"//span[contains(text(), 'Перетяните булочку сюда (верх)')]\")",
+        "time" : {
+          "start" : 1780085992752,
+          "stop" : 1780085993956,
+          "duration" : 1204
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "source_locator",
+          "value" : "('xpath', \"(//a[contains(@class, 'BurgerIngredient_ingredient')])[1]\")"
+        }, {
+          "name" : "target_locator",
+          "value" : "('xpath', \"//span[contains(text(), 'Перетяните булочку сюда (верх)')]\")"
+        }, {
+          "name" : "timeout",
+          "value" : "10"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по 'Оформить заказ'",
+      "time" : {
+        "start" : 1780085993956,
+        "stop" : 1780085994865,
+        "duration" : 909
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"//button[contains(text(), 'Оформить заказ')]\")",
+        "time" : {
+          "start" : 1780085993956,
+          "stop" : 1780085994338,
+          "duration" : 382
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Получить аттрибут",
+        "time" : {
+          "start" : 1780085994865,
+          "stop" : 1780085994865,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Найти элемент",
+          "time" : {
+            "start" : 1780085994865,
+            "stop" : 1780085994865,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Закрыть окно уведомления",
+      "time" : {
+        "start" : 1780085994865,
+        "stop" : 1780085995232,
+        "duration" : 367
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"(//button[contains(@class, 'Modal_modal__close')])[1]\")",
+        "time" : {
+          "start" : 1780085994865,
+          "stop" : 1780085995232,
+          "duration" : 367
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по 'Лента заказов'",
+      "time" : {
+        "start" : 1780085995232,
+        "stop" : 1780085996137,
+        "duration" : 905
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"//p[contains(text(), 'Лента Заказов')]\")",
+        "time" : {
+          "start" : 1780085995232,
+          "stop" : 1780085995614,
+          "duration" : 382
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Получение номера заказа В работе",
+      "time" : {
+        "start" : 1780085999149,
+        "stop" : 1780085999155,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Получить аттрибут",
+        "time" : {
+          "start" : 1780085999149,
+          "stop" : 1780085999155,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Найти элемент",
+          "time" : {
+            "start" : 1780085999149,
+            "stop" : 1780085999155,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 27,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "registered_user::0",
+    "time" : {
+      "start" : 1780085999155,
+      "stop" : 1780085999276,
+      "duration" : 121
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1780085999293,
+      "stop" : 1780086001460,
+      "duration" : 2167
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Лента заказов"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_list_orders"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrderFeed"
+  }, {
+    "name" : "host",
+    "value" : "Patrick"
+  }, {
+    "name" : "thread",
+    "value" : "9952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_list_orders"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3afaeaaf16870d80.json",
+  "parameterValues" : [ ]
+}

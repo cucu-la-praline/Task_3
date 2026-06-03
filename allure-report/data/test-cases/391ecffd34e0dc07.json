@@ -1,0 +1,380 @@
+{
+  "uid" : "391ecffd34e0dc07",
+  "name" : "Переход по клику на «Личный кабинет»",
+  "fullName" : "tests.test_profile.TestProfile#test_go_to_personal_account",
+  "historyId" : "1061b68d937b23939fb36662ad1a00e3",
+  "time" : {
+    "start" : 1780086118925,
+    "stop" : 1780086120942,
+    "duration" : 2017
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "registered_user",
+    "time" : {
+      "start" : 1780086118692,
+      "stop" : 1780086118924,
+      "duration" : 232
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1780085900709,
+      "stop" : 1780085900789,
+      "duration" : 80
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1780086118692,
+      "stop" : 1780086118692,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1780086116173,
+      "stop" : 1780086118692,
+      "duration" : 2519
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "api_base_url",
+    "time" : {
+      "start" : 1780086118692,
+      "stop" : 1780086118692,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Клик по 'Войти в аккаунт'",
+      "time" : {
+        "start" : 1780086119073,
+        "stop" : 1780086119464,
+        "duration" : 391
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"//button[contains(text(), 'Войти в аккаунт')]\")",
+        "time" : {
+          "start" : 1780086119073,
+          "stop" : 1780086119464,
+          "duration" : 391
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1780086119464,
+        "stop" : 1780086119989,
+        "duration" : 525
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ввод email",
+        "time" : {
+          "start" : 1780086119464,
+          "stop" : 1780086119514,
+          "duration" : 50
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Ввод текста 'qsmith@example.net' в поле: ('xpath', \"//input[@name='name']\")",
+          "time" : {
+            "start" : 1780086119464,
+            "stop" : 1780086119514,
+            "duration" : 50
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти элемент",
+            "time" : {
+              "start" : 1780086119464,
+              "stop" : 1780086119464,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "'qsmith@example.net'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввод пароля",
+        "time" : {
+          "start" : 1780086119514,
+          "stop" : 1780086119557,
+          "duration" : 43
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Ввод текста 'g7^K6Mwvvu' в поле: ('xpath', \"//input[@name='Пароль']\")",
+          "time" : {
+            "start" : 1780086119514,
+            "stop" : 1780086119557,
+            "duration" : 43
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти элемент",
+            "time" : {
+              "start" : 1780086119514,
+              "stop" : 1780086119523,
+              "duration" : 9
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : false,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "'g7^K6Mwvvu'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Клик по кнопке 'Войти'",
+        "time" : {
+          "start" : 1780086119557,
+          "stop" : 1780086119989,
+          "duration" : 432
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Клик по элементу: ('xpath', \"//button[contains(text(), 'Войти')]\")",
+          "time" : {
+            "start" : 1780086119557,
+            "stop" : 1780086119989,
+            "duration" : 432
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'qsmith@example.net'"
+      }, {
+        "name" : "password",
+        "value" : "'g7^K6Mwvvu'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по 'Личный кабинет'",
+      "time" : {
+        "start" : 1780086119989,
+        "stop" : 1780086120942,
+        "duration" : 953
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Клик по элементу: ('xpath', \"//p[contains(text(), 'Личный Кабинет')]\")",
+        "time" : {
+          "start" : 1780086119989,
+          "stop" : 1780086120426,
+          "duration" : 437
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 13,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "registered_user::0",
+    "time" : {
+      "start" : 1780086120942,
+      "stop" : 1780086121084,
+      "duration" : 142
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1780086121100,
+      "stop" : 1780086123219,
+      "duration" : 2119
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Личный кабинет"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_profile"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProfile"
+  }, {
+    "name" : "host",
+    "value" : "Patrick"
+  }, {
+    "name" : "thread",
+    "value" : "9952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_profile"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "391ecffd34e0dc07.json",
+  "parameterValues" : [ ]
+}
